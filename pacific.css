@@ -16,13 +16,14 @@ font-family:Arial, Helvetica, sans-serif;
 #wrapper {
     margin:auto; /*this centers the elements inside the wrapper*/
     background-image: linear-gradient(to bottom, #ffffff, #caefd7);
-    background-color: #caefd7;
+    background-color: #117A65;
 }
 
 header{
 /*configure background*/
-    background-color: #039156;
+    background-color: #45B39D;
     padding-top: 15px;
+    
 /*text properties*/
     color: #FFFFFF;
     text-align: center;
@@ -46,7 +47,7 @@ h1 {
     margin-bottom: 0;
     padding: 0.5em 0;
     font-family: Georgia, 'Cavolini', Times, serif;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.10em;
 }
 
 nav {
@@ -54,7 +55,7 @@ nav {
     text-align: center;
     /*text properties*/
     font-weight: bold;
-    font-size: 120%; 
+    font-size: 100%; 
 }
 
 nav a {
@@ -70,7 +71,7 @@ nav ul {
 }
 
 nav li{
-    border-bottom: 1px solid #039156;
+    border-bottom: 1px solid #45B39D;
 }
 
 nav a:link {
@@ -85,6 +86,15 @@ nav a:hover {
     color: #8b620a;
 }
 
+input, textarea {
+    display: block;
+    margin-bottom: .5em;
+}
+form {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 25em;
+}
 main {
 /*layout properties*/
     padding: 1px 20px 20px 30px;/*top right bottom left*/
@@ -99,18 +109,18 @@ main ul{
 }
 
 h2 {
-    color:#039156;
+    color:#45B39D;
     font-family: Georgia, 'Cavolini', Times, serif;
     text-shadow: 1px 1px 1px #cccccc;
 }
 
 h3 {
     font-family: Georgia, 'Cavolini', Times, serif;
-    color: #039156;
+    color: #45B39D;
 }
 
 dt {
-    color: #039156;
+    color: #45B39D;
    
 }
 
@@ -126,7 +136,7 @@ footer {
 
 /*classes and ids*/
 .resort {
-    color:#039156;
+    color:#45B39D;
     font-weight: bold;
 }
 
@@ -136,21 +146,36 @@ footer {
 
 #homehero {
 height: 300px;
+width: 900px;
+object-fit: contain;
 background-image: url(istockphoto-header.jpg);
-background-size: 100% 100%;
+background-size: cover;
 background-repeat: no-repeat;
+background-position: center;
+position: relative;
 }
 
 #doghero {
     height: 300px;
     background-image: url(istockphoto-vetvisit.jpg);
-    background-size: flex;
     background-repeat: no-repeat;
-    }
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#gallery {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
 
 #abouthero {
         height: 300px;
-        background-image: url(istockphoto-human_dog.jpg);
+        background-image: url(istockphoto-vetvisit.jpg);
         background-size: 80% 120%;
         background-repeat: no-repeat;
         background-image: center;
@@ -182,7 +207,7 @@ background-repeat: no-repeat;
     #wrapper{
         margin: auto;
         width: 80%;
-        border: 1px solid #039156;
+        border: 1px solid #45B39D;
         box-shadow: 3px 3px 3px#039156;
     }
     nav{

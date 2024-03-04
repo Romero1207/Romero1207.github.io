@@ -13,20 +13,18 @@
 <!--linking to main sylesheet-->   
 <link rel="stylesheet" href="pacific.css">
    
-    <title>Rescue Ranch</title>
-    
+    <title>Volunteer</title>
+
 </head>
 
 <body>
-    <!--Wireframe content always goes in the body.>
-    -->
+    <!--Wireframe content always goes in the body-->
 
 <div id="wrapper">
 
     <header>
         <!--heading 1 always goes in the header to tell-->
         <h1><a href="index.html">Rescue Ranch</a></h1>
-    
     </header>
     <nav>
         <!--Creating the navigation that will be at the-->
@@ -38,30 +36,35 @@
         </ul>
     </nav>
     
-    <!--my hero image!-->
-<div class="hero" id="homehero">
-</div>
-
     <!--end header area going to e a part of every HTML page-->
    <main>
-    <h2>"Everybody should have a shelter dog. It's good for the soul" - Paul Shaffer</h2>
-    <p>At <span class="resort">Rescue Ranch</span> we help to get animals back on their feet and into a loving home. This site will help you find a loving animal that might be just right for your home. Also, we work with other rescues and can help you find what you need.</p><br>
-    <ul>
-        <!--unordered list with benefits-->
+    <h2>We would love to hear from you.</h2>
+    <h3>Sign up to volunteer today!</h3>
+    <!--Input customer info-->
+    <p>Required fields are marked with an asterisk *.</p>
+    <form method="post"
+    action="https://webdevbasics.net/scripts/pacific.php">
+        <label for="fname">*First Name:</label>
+        <input type="text" id="fname" name="fname" required placeholder="your first name"><br>
+        <label for="lname">*Last Name:</label>
+        <input type="text" id="lname" name="lname" required placeholder="your last name"><br>
+        <label for="myEmail">*E-Mail Address:</label>
+        <input type="email" id="myEmail" name="myEmail" required placeholder="you@yourdomain.com"><br>
+        <label for="number">Phone Number:</label>
+        <input type="text" id="number" name="number" maxlength="12"><br>
+        <label for="myDate">Date(s):</label>
+        <input type="date" id="myDate" name="myDate"><br><br>
+        <label for="myComments">Select a day above or let us know what days work best for you, and we'll be in touch!</label>
+        <textarea class="form-control" rows="2" cols="30" id="myComments" placeholder="what days work best for you?"></textarea><br><br>
+    
+<button type="submit" form="nameform" value="Submit">Submit</button><br><br>
 
-        <li>Our vet help examine if they are hurt or injured</li>
-        <li>They are given a bath and a warm bed</li>
-        <li>They are given food and water</li>
-        <li>We immediatly start looking for a foster home for the animals</li>
-    </ul>
-    <h3>
-        If you know of an animal that needs our help, please reach out to us.
+</form>
 
-    </h3><br><br>
 
     <div id="contact">
         <span class="resort">Rescue Ranch</span> <br>
-        555 Rescue Ranch Rd <br>
+        555 Rescue Ranch Road <br>
         Mesa, AZ 85555<br><br>
         888-555-5555 <br><br>
     </div>
@@ -76,4 +79,3 @@
     </footer>
 </div>
 </body>
-
