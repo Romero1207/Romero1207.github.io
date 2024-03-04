@@ -42,6 +42,17 @@ header a:hover {
     color: #a0938a;
 }
 
+header div {
+    height: 90px;
+}
+
+header img {
+    width: 100px; 
+    float: left;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 10px;
+    
+}
 h1 {
     margin-bottom: 0;
     margin-bottom: 0;
@@ -229,7 +240,7 @@ position: relative;
             grid-template-columns: 150px 1fr;
             grid-template-rows: 100px auto 50px;
             grid-template: 
-            "header header" 100px
+            "header header" auto
             "nav hero" auto
             "nav main" auto
             "nav footer" 50px / 180px 1fr;
